@@ -32,7 +32,7 @@ $(call inherit-product, device/xiaomi/rock/device.mk)
 
 ## Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := omni_rock
+PRODUCT_NAME := twrp_rock
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := rock
 PRODUCT_MANUFACTURER := Xiaomi
