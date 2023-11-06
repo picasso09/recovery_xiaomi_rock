@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_rock.mk
 
-COMMON_LUNCH_CHOICES := omni_rock-eng
+COMMON_LUNCH_CHOICES := twrp_rock-eng
