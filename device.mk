@@ -22,7 +22,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # V A/B
 ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 # Bootctrl
 PRODUCT_PACKAGES += \
