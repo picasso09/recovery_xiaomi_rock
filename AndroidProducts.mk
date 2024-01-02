@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_rock.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_rock.mk
 
 COMMON_LUNCH_CHOICES := twrp_rock-eng
