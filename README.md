@@ -1,4 +1,4 @@
-# ### TWRP Device tree for Poco M5
+# TWRP Device tree for Poco M5
 
 Poco M5 (codenamed _"rock/stone"_) is a smartphone from Xiaomi.
 
@@ -20,8 +20,7 @@ Camera  | 50 MP, f/1.8, (wide), PDAF, 2 MP, f/2.4, (macro), 2 MP, f/2.4, (depth)
 
 ## Device picture
 
-![31d50d2bab762b43fd5e1489a16b2388](https://github.com/TeamWin/android_device_xiaomi_fleur/assets/142644567/22638040-633f-4042-a66d-56d19de7858e)
-
+![download](https://github.com/DeandraAir/twrp_tree_rock/assets/142644567/0bca5161-310b-4c08-a48f-787800f3fca3)
 
 ## Features
 
@@ -41,10 +40,12 @@ Works:
 - [ ] Flashlight
 - [ ] Vibrator
 
-## Building
+# Building
+```bash
 source build/envsetup.sh
 lunch twrp_rock-eng
 mka vendorbootimage
+```
 
 ## To use it:
 
