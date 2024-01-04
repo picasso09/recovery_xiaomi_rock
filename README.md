@@ -4,6 +4,8 @@ Poco M5 (codenamed _"rock/stone"_) is a smartphone from Xiaomi.
 
 It was announced & released on September 2022.
 
+[![SourceForge Total Downloads](https://sourceforge.net/projects/premiumprjktrom/files/Rock/OrangeFox-UNOFFICIAL-rock_01032024.img/download=social&logo=sourceforge&logoColor=%23000000)](https://sourceforge.net/projects/premiumprjktrom/files/Rock/OrangeFox-UNOFFICIAL-rock_01032024.img/download)
+
 ## Device specifications
 
 Basic   | Spec Sheet
