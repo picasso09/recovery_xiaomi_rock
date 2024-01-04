@@ -29,7 +29,6 @@ Works:
 - [X] ADB
 - [X] Decryption
 - [X] Display
-- [X] Flashing Rom
 - [X] Fasbootd
 - [X] Flashing
 - [X] MTP
