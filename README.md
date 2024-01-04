@@ -20,7 +20,7 @@ Camera  | 50 MP, f/1.8, (wide), PDAF, 2 MP, f/2.4, (macro), 2 MP, f/2.4, (depth)
 
 ## Device picture
 
-[31d50d2bab762b43fd5e1489a16b2388](https://github.com/TeamWin/android_device_xiaomi_fleur/assets/142644567/22638040-633f-4042-a66d-56d19de7858e)
+![download](https://github.com/TeamWin/android_device_xiaomi_fleur/assets/142644567/c1263aba-f289-4747-928a-1f753198cab2)
 
 ## Features
 
