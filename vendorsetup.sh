@@ -7,7 +7,9 @@ export OF_DEFAULT_KEYMASTER_VERSION=4.1
 export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 export FOX_VARIANT="A13+"
 export OF_MAINTAINER="Deandra_Aditya"
-export OF_FLASHLIGHT_ENABLE=0
+export OF_FLASHLIGHT_ENABLE=1
+export OF_FL_PATH1=/sys/class/flashlight_core/flashlight
+
 
 export FOX_USE_BASH_SHELL=1
 export FOX_USE_NANO_EDITOR=1
