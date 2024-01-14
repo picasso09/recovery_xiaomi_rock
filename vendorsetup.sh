@@ -10,7 +10,7 @@ export OF_MAINTAINER="Deandra_Aditya"
 export OF_FLASHLIGHT_ENABLE=1
 export OF_FL_PATH1=/sys/class/flashlight_core/flashlight
 
-
+export FOX_BUILD_TYPE="Stable"
 export FOX_USE_BASH_SHELL=1
 export FOX_USE_NANO_EDITOR=1
 export FOX_USE_TAR_BINARY=1
