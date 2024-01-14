@@ -49,6 +49,7 @@
 /system_root        auto  /dev/block/mapper/system                       flags=display="System";backup=0;logical
 /vendor             auto  /dev/block/mapper/vendor                       flags=display="Vendor";logical
 /product            auto  /dev/block/mapper/product                      flags=display="Product";logical
+/mi_ext             auto  /dev/block/mapper/mi_ext                       flags=display="Mi_ext";logical
 
 # Images
 /system_image       emmc  /dev/block/mapper/system                       flags=backup=1;display="System Image";slotselect;flashimg=1
@@ -56,6 +57,7 @@
 /vendor_image       emmc  /dev/block/mapper/vendor                       flags=backup=1;display="Vendor Image";slotselect;flashimg=1
 /product_image      emmc  /dev/block/mapper/product                      flags=backup=1;display="Product Image";slotselect;flashimg=1
 /odm_image          emmc  /dev/block/mapper/odm_dlkm                     flags=backup=1;display="ODM Image";slotselect;flashimg=1
+/mi_ext_image       emmc  /dev/block/mapper/mi_ext                       flags=backup=1;display="mi_ext";slotselect;flashimg=1
 
 # Removable Storage
 /external_sd   auto  /dev/block/mmcblk1p1  /dev/block/mmcblk0p1  flags=display="External_SDcard";storage;wipeingui;removable
