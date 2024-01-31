@@ -49,6 +49,16 @@
     	<name>android.hardware.security.sharedsecret</name>
     	<fqname>ISharedSecret/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.vibrator</name>
+        <version>2</version>
+        <fqname>IVibrator/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.vibrator</name>
+        <version>2</version>
+        <fqname>IVibratorManager/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>

@@ -6,9 +6,9 @@ export FOX_VIRTUAL_AB_DEVICE=1
 export OF_DEFAULT_KEYMASTER_VERSION=4.1
 export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 export FOX_VARIANT="A13+"
-export OF_MAINTAINER="Deandra_Aditya"
+export OF_MAINTAINER="Kychera22"
 export OF_FLASHLIGHT_ENABLE=1
-export OF_FL_PATH1=/sys/class/flashlight_core/flashlight
+export OF_FL_PATH1=/sys/class/leds/flashlight
 
 export FOX_BUILD_TYPE="Stable"
 export FOX_USE_BASH_SHELL=1
@@ -38,7 +38,7 @@ export OF_CLOCK_POS=1
 
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
-export CCACHE_MAXSIZE="5G"
+export CCACHE_MAXSIZE="20G"
 export CCACHE_DIR="~/ccache"
 
 if [ ! -d ${CCACHE_DIR} ];
@@ -47,4 +47,6 @@ then
   echo "Please edit the CCACHE_DIR build variable or mount the directory."
 fi
 
+export ALLOW_MISSING_DEPENDENCIES=true
+export FOX_BUILD_DEVICE=rock
 export LC_ALL="C"
