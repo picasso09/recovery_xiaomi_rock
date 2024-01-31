@@ -39,7 +39,7 @@ Works:
 - [X] SD Card
 - [X] Touch
 - [ ] Flashlight
-- [ ] Vibrator
+- [X] Vibrator
 
 # Building
 ```bash
