@@ -9,6 +9,7 @@ export FOX_VARIANT="A13+"
 export OF_MAINTAINER="Kychera22"
 export OF_FLASHLIGHT_ENABLE=1
 export OF_FL_PATH1=/sys/class/leds/flashlight
+export OF_FL_PATH2=/sys/class/leds/torch-light0
 
 export FOX_BUILD_TYPE="Stable"
 export FOX_USE_BASH_SHELL=1
@@ -22,6 +23,8 @@ export FOX_DELETE_MAGISK_ADDON=1
 export FOX_DELETE_AROMAFM=1
 export FOX_ENABLE_APP_MANAGER=1
 export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
+export OF_NO_REFLASH_CURRENT_ORANGEFOX=1
+
 
 export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
 

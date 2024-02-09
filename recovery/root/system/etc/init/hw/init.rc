@@ -89,6 +89,17 @@ on firmware_mounts_complete
     chown system system /sys/class/leds/vibrator/state
     chown system system /sys/class/timed_output/vibrator/enable
 
+#flashlight
+    chown system system /sys/class/leds/flashlight/trigger
+    chown system system /sys/class/leds/flashlight/brightness
+    chown system system /sys/class/leds/flashlight/max_brightness
+
+    chown system system /sys/class/leds/torch-light0/trigger
+    chown system system /sys/class/leds/torch-light0/brightness
+    chown system system /sys/class/leds/torch-light0/max_brightness
+
+
+
 # Mount filesystems and start core system services.
 on late-init
     trigger early-fs

@@ -50,6 +50,8 @@ AB_OTA_PARTITIONS += \
     dtbo \
     product \
     system \
+    system_ext \
+    mi_ext \
     vbmeta \
     vbmeta_system \
     vbmeta_vendor \
@@ -87,10 +89,13 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libpuresoftkeymasterdevice
 
+
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V1-ndk_platform.so \
+
+TW_LOAD_VENDOR_MODULES := "flashlight.ko flashlights-led191.ko"
 
 # Vendor ramdisk
 PRODUCT_COPY_FILES += \
