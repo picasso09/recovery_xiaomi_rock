@@ -38,8 +38,8 @@ Works:
 - [X] USB OTG
 - [X] SD Card
 - [X] Touch
-- [x] Flashlight
-- [x] Vibrator
+- [X] Flashlight
+- [X] Vibrator
 
 # Building
 ```bash
