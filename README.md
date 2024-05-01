@@ -1,8 +1,6 @@
-# TWRP Device tree for Poco M5
+#  Recovery tree of Xiaomi POCO M5/Redmi 11 Prime 
 
-[![SourceForge Total Downloads](https://img.shields.io/sourceforge/dt/orangefox-device-xiaomi-rock?style=social&logo=sourceforge&logoColor=%23000000)](https://sourceforge.net/projects/premiumprjktrom/files/Rock/OrangeFox-UNOFFICIAL-rock_01032024.img/download)
-
-Poco M5 (codenamed _"rock/stone"_) is a smartphone from Xiaomi.
+Poco M5/Redmi 11 Prime (codenamed _"stone/rock"_) is a smartphone from Xiaomi.
 
 It was announced & released on September 2022.
 
@@ -38,7 +36,7 @@ Works:
 - [X] USB OTG
 - [X] SD Card
 - [X] Touch
-- [X] Flashlight
+- [ ] Flashlight
 - [X] Vibrator
 
 # Building
