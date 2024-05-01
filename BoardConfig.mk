@@ -164,7 +164,6 @@ TW_MAX_BRIGHTNESS := 2020
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone28/temp"
-TW_DEVICE_VERSION := Kychera22
 TW_FRAMERATE := 90
 TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CPU_POS := 50
@@ -198,3 +197,6 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 
 # Apex
 TW_EXCLUDE_APEX=true
+
+# Maintainer specific settings
+#TW_DEVICE_VERSION := Kychera22

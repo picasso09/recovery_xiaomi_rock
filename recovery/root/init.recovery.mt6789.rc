@@ -3,8 +3,9 @@ import /init.microtrust.rc
 on init
     # Create a more standard /dev/block layout for our scripts
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
-    mkdir /mnt/vendor/persist 0700 root root
-    mount ext4 /dev/block/platform/bootdevice/by-name/persist /mnt/vendor/persist
+    mkdir /persist 0700 root root
+    mount ext4 /dev/block/by-name/persist /persist
+    mkdir /persist/OFRP
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
     setprop sys.usb.configfs 1
     setprop sys.usb.controller "musb-hdrc"
@@ -129,10 +130,6 @@ on boot
     start vendor.vibrator-default
     setprop sys.usb.config adb
 
-on property:twrp.modules.loaded=true
-    # Mount persist
-      mkdir /persist
-      mount ext4 /dev/block/by-name/persist /persist rw
 
 service kernelsu /system/bin/kernelsu.sh
     user root
