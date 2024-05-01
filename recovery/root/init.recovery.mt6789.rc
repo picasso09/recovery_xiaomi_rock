@@ -148,7 +148,7 @@ on boot
     setprop sys.usb.config adb
 
 
-service kernelsu /system/bin/kernelsu.sh
+service modules_mount /system/bin/modules_mount.sh
     user root
     group root
     disabled
@@ -156,4 +156,4 @@ service kernelsu /system/bin/kernelsu.sh
     seclabel u:r:recovery:s0
 
 on property:twrp.decrypt.done=true
-    start kernelsu
+    start modules_mount
