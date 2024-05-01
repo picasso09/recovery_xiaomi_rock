@@ -52,6 +52,7 @@
 /dtbo               emmc   /dev/block/by-name/dtbo                         flags=display="Dtbo";slotselect;backup=1
 /otp                emmc   /dev/block/by-name/otp
 /vbmeta             emmc   /dev/block/by-name/vbmeta                       flags=display="VBMeta";slotselect;flashimg=1
+/cust               ext4   /dev/block/by-name/cust                         flags=wipeingui
 
 # Images
 /system_image       emmc   /dev/block/mapper/system                        flags=backup=1;display="System Image";slotselect;flashimg=1
