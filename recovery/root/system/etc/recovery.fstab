@@ -3,14 +3,14 @@ system                                  /system                ext4   auto,barri
 vendor                                  /vendor                ext4   auto,barrier=1,discard  wait,slotselect,avb,logical,first_stage_mount
 product                                 /product               ext4   auto,barrier=1,discard  wait,slotselect,avb,logical,first_stage_mount
 system_ext                              /system_ext            ext4   auto,barrier=1,discard  wait,slotselect,avb,logical,first_stage_mount
-mi_ext                                  /mi_ext                ext4   auto,barrier=1,discard  wait,slotselect,avb,logical,first_stage_mount
+mi_ext                                  /mi_ext                ext4   ro,barrier=1,discard    wait,slotselect,avb,logical,first_stage_mount
 /dev/block/by-name/metadata             /metadata              ext4                           noatime,nosuid,nodev,discard wait,check,formattable
 /dev/block/by-name/userdata             /data                  f2fs                           noatime,nosuid,nodev,discard,noflush_merge,checkpoint_merge,reserve_root=134217,resgid=1065,fsync_mode=nobarrier,gc_merge,atgc,inlinecrypt wait,check,formattable,quota,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption
-/dev/block/by-name/rescue               /cache                 ext4                           noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
-/dev/block/by-name/protect1             /mnt/vendor/protect_f  ext4                           noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
-/dev/block/by-name/protect2             /mnt/vendor/protect_s  ext4                           noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
-/dev/block/by-name/nvdata               /mnt/vendor/nvdata     ext4                           noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
-/dev/block/by-name/nvcfg                /mnt/vendor/nvcfg      ext4                           noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
+/dev/block/by-name/rescue               /cache                 ext4   auto                    noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
+/dev/block/by-name/protect1             /protect_f             ext4   auto                    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
+/dev/block/by-name/protect2             /protect_s             ext4   auto                    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
+/dev/block/by-name/nvdata               /nvdata                ext4   auto                    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
+/dev/block/by-name/nvcfg                /nvcfg                 ext4   auto                    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
 /dev/block/by-name/persist              /persist               ext4   auto                    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check
 /dev/block/by-name/frp                  /persistent            emmc   defaults                defaults
 /dev/block/by-name/nvram                /nvram                 emmc   defaults                defaults
