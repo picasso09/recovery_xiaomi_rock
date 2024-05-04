@@ -110,7 +110,17 @@ service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service
     user root
     group root system
     seclabel u:r:recovery:s0
+
+service mountfix /sbin/sh /system/bin/mount.sh
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:recovery:s0
     
+on property:sys.usb.ffs.ready=1
+    start mountfix
+
 on property:hwservicemanager.ready=true
     start teei_daemon
     start gatekeeper-1-0
