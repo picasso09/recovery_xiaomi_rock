@@ -31,7 +31,7 @@ overlay                             /product/etc/preferred-apps overlay ro,lower
 overlay                             /product/etc/security       overlay ro,lowerdir=/mnt/vendor/mi_ext/product/etc/security:/product/etc/security check,nofail
 overlay                             /system_ext/etc/permissions overlay ro,lowerdir=/mnt/vendor/mi_ext/system_ext/etc/permissions:/system_ext/etc/permissions check,nofail
 # Android fstab
-/dev/block/by-name/rescue           /cache                      ext4    noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
+# /dev/block/by-name/rescue           /cache                      ext4    noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
 /dev/block/by-name/protect1         /mnt/vendor/protect_f       ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 /dev/block/by-name/protect2         /mnt/vendor/protect_s       ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 /dev/block/by-name/nvdata           /mnt/vendor/nvdata          ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
