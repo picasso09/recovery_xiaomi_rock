@@ -60,13 +60,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_ENABLE_LPTOOLS=1
 
     #OTA
-	export FOX_AB_DEVICE=1
+	 export FOX_AB_DEVICE=1
     export FOX_VIRTUAL_AB_DEVICE=1
     export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 
     #Flashlight
-    export OF_FL_PATH1=/sys/class/leds/flashlight
-    export OF_FL_PATH2=/sys/class/leds/torch-light0
+    export OF_FL_PATH1=/sys/class/leds/flashlight/brightness
+    export OF_FL_PATH2=/sys/class/leds/torch-light0/brightness
 
 	lunch twrp_$FDEVICE-eng
 	# let's see what are our build VARs
