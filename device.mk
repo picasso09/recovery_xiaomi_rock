@@ -57,7 +57,7 @@ AB_OTA_PARTITIONS += \
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
+    FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
 # VNDK
@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += \
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
-    libpuresoftkeymasterdevice
+    libpuresoftkeymasterdevice \
+    libkeymint
 
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
