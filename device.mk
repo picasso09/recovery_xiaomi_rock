@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
-    
+
 # AB
 AB_OTA_UPDATER := true
 
@@ -53,7 +53,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vendor \
     vendor_boot
-    
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
@@ -61,10 +61,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 32
+PRODUCT_TARGET_VNDK_VERSION := 34
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 32
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
@@ -96,5 +96,5 @@ TW_LOAD_VENDOR_MODULES := "flashlight.ko flashlights-led191.ko"
 
 # Vendor ramdisk
 PRODUCT_COPY_FILES += \
-     device/xiaomi/rock/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789 
+     device/xiaomi/rock/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6789
 
