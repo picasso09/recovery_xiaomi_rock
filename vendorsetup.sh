@@ -39,9 +39,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  	export ALLOW_MISSING_DEPENDENCIES=true
 
  	#OFR build settings & info
-	export TARGET_DEVICE_ALT="rock,stone"
-	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
-	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+    export TARGET_DEVICE_ALT="rock,stone"
+    export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+    export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+    export FOX_RECOVERY_VENDOR_BOOT_PARTITION="/dev/block/by-name/vendor_boot"
     export FOX_VENDOR_BOOT_RECOVERY_FULL_REFLASH=1
     export FOX_VENDOR_BOOT_RECOVERY=1
     export FOX_DELETE_MAGISK_ADDON=1
@@ -68,7 +69,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_FL_PATH1=/sys/class/leds/flashlight/brightness
     export OF_FL_PATH2=/sys/class/leds/torch-light0/brightness
 
-	lunch twrp_$FDEVICE-eng
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
   	   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
