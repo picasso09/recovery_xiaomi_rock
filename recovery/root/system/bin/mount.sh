@@ -15,7 +15,6 @@ mount /dev/block/mapper/system_ext /system_ext
 mount /dev/block/mapper/product /product
 mount /dev/block/mapper/mi_ext /mi_ext
 mount /dev/block/mapper/vendor /vendor
-mount /dev/block/mapper/vendor_dlkm /vendor_dlkm
 
 # Remount as read-write
 mount -o remount,rw /system_root

@@ -58,7 +58,6 @@
 /system_image       emmc   /dev/block/mapper/system                        flags=backup=1;display="System Image";slotselect;flashimg=1
 /system_ext_image   emmc   /dev/block/mapper/system_ext                    flags=backup=1;display="System_ext Image";slotselect;flashimg=1
 /vendor_image       emmc   /dev/block/mapper/vendor                        flags=backup=1;display="Vendor Image";slotselect;flashimg=1
-/vendor_dlkm_image  emmc   /dev/block/mapper/vendor_dlkm                   flags=backup=1;display="Vendor_dlkm Image";slotselect;flashimg=1
 /product_image      emmc   /dev/block/mapper/product                       flags=backup=1;display="Product Image";slotselect;flashimg=1
 /mi_ext_image       emmc   /dev/block/mapper/mi_ext                        flags=backup=1;display="Mi_ext Image";slotselect;flashimg=1
 
